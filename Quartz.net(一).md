@@ -442,4 +442,18 @@ IJobDetail job = JobBuilder.Create<Class9>().WithIdentity(new JobKey(JOB_ID)).Se
         }
 ```
 
-好了，完美解决问题！
+好了，这样就可以解决问题了！
+
+
+
+### 十一、设置线程数
+
+```
+Quartz.Simpl.SimpleThreadPool sp = new Quartz.Simpl.SimpleThreadPool();
+sp.ThreadCount = 10;//设置10个线程
+```
+
+
+
+
+
