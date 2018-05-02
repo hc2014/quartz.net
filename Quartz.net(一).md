@@ -457,3 +457,11 @@ sp.ThreadCount = 10;//设置10个线程
 
 
 
+### 十二、获取当前正在执行的Job
+
+```
+  IScheduler scheduler;
+ var list= scheduler.GetCurrentlyExecutingJobs();
+```
+
+GetCurrentlyExecutingJobs方法是获取**正在执行** 的Job
